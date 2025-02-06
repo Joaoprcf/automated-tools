@@ -87,7 +87,7 @@ def main():
         cf = cf.strip()
         if cf and os.path.isfile(cf):
             file_size = os.path.getsize(cf)
-            if file_size < 15000:
+            if file_size < 20000:
                 with open(cf, "r", encoding="utf-8", errors="ignore") as f:
                     file_content = f.read()
                 review_prompt.append(f"\n# File: {cf}\n")
